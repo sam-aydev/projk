@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FaQuoteRight } from "react-icons/fa";
+import { FaArrowRight, FaInstagram, FaQuoteRight } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,6 +8,13 @@ import img1 from "@/public/011.jpg";
 import img2 from "@/public/012-400EastPalmettoParkRoad-BocaRaton-FL-33432-FULL-scaled.jpg";
 import img3 from "@/public/13-2.jpg";
 import img4 from "@/public/2.png";
+import { PiSprayBottle } from "react-icons/pi";
+import { IoMaleFemale } from "react-icons/io5";
+import { GiFemaleVampire } from "react-icons/gi";
+import FootImg1 from "@/public/image-17-copyright-1-370x370.jpg";
+import FootImg2 from "@/public/image-18-copyright-370x370.jpg";
+import FootImg3 from "@/public/image-19-copyright-370x370.jpg";
+import FootImg4 from "@/public/image-20-copyright-370x370.jpg";
 
 export default function Home() {
   var settings = {
@@ -154,25 +161,102 @@ export default function Home() {
             ))}
           </Slider>
         </div>
-        <div className=" flex justify-center items-center space-x-4 mt-5">
-          {/* <Image
-            src="/avatar.png"
-            alt="avatar"
-            width={400}
-            height={400}
-            className="size-10 rounded-full scale-100 hover:scale-125 transition-all duration-500"
-          /> */}
-          {/* <Image
-            src={Avatar}
-            alt="avatar"
-            width={400}
-            height={400}
-            defaultValue="Jennifer Lee"
-            className="size-10 rounded-full scale-100 hover:scale-125 transition-all duration-500"
-          /> */}
+
+        <div className="mt-28 md:flex md:space-x-10 m">
+          <div className=" group mx-auto w-5/6">
+            <div className="bg-green-200 group-hover:bg-green-700 group-hover:text-white cursor-pointer transition-all duration-500 flex justify-center items-center size-24 mx-auto rounded-tl-[200px] rounded-bl-[150px] rounded-tr-[300px] rounded-br-[120px]">
+              <PiSprayBottle className="size-12 mx-auto" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-serif mt-4">Recovery Proceedures</h2>
+              <p className="mt-3 mx-auto ">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate accusamus facilis options!
+              </p>
+              <button className="flex justify-center items-center space-x-2 mx-auto w-full mt-4">
+                <span className="hidden group-hover:block -translate-x-8 group-hover:translate-x-0 transition-all duration-500">
+                  Read More
+                </span>
+                <FaArrowRight className="size-4 -translate-x-8 group-hover:translate-x-0 transition-all duration-200" />
+              </button>
+            </div>
+          </div>
+          <div className="mt-8 group mx-auto w-5/6 md:mt-0">
+            <div className="bg-green-200 group-hover:bg-green-700 group-hover:text-white cursor-pointer transition-all duration-500 flex justify-center items-center size-24 mx-auto rounded-tl-[400px] rounded-bl-[100px] rounded-tr-[250px] rounded-br-[300px]">
+              <IoMaleFemale className="size-12 mx-auto" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-serif mt-4">Loss Hair & Makes</h2>
+              <p className="mt-3 mx-auto ">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate accusamus facilis options!
+              </p>
+              <button className="flex justify-center items-center space-x-2 mx-auto w-full mt-4">
+                <span className="hidden group-hover:block -translate-x-8 group-hover:translate-x-0 transition-all duration-500">
+                  Read More
+                </span>
+                <FaArrowRight className="size-4 -translate-x-8 group-hover:translate-x-0 transition-all duration-200" />
+              </button>
+            </div>
+          </div>
+          <div className="mt-8 group mx-auto w-5/6 md:mt-0">
+            <div className="bg-green-200 group-hover:bg-green-700 group-hover:text-white cursor-pointer transition-all duration-500 flex justify-center items-center size-24 mx-auto rounded-tl-[400px] rounded-bl-[100px] rounded-tr-[250px] rounded-br-[300px]">
+              <GiFemaleVampire className="size-12 mx-auto" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-serif mt-4">
+                Hair Lamination & Botox
+              </h2>
+              <p className="mt-3 mx-auto ">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Cupiditate accusamus facilis options!
+              </p>
+              <button className="flex justify-center items-center space-x-2 mx-auto w-full mt-4">
+                <span className="hidden group-hover:block -translate-x-8  group-hover:translate-x-0 transition-all duration-500">
+                  Read More
+                </span>
+                <FaArrowRight className="size-4 -translate-x-8 group-hover:translate-x-0 transition-all duration-200" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="bg-[#0B0D26] text-white pt-20 px-5 mt-20 ">
+      <div className=" mt-20 relative">
+        <div className="grid grid-cols-2 md:flex">
+          <Image
+            src={FootImg1}
+            alt="avatar"
+            width={400}
+            height={400}
+            className="md:w-1/4 w-full opacity-100 transition-all duration-500 hover:opacity-70"
+          />
+          <Image
+            src={FootImg2}
+            alt="avatar"
+            width={400}
+            height={400}
+            className="md:w-1/4 w-full opacity-100 transition-all duration-500 hover:opacity-70"
+          />
+          <Image
+            src={FootImg3}
+            alt="avatar"
+            width={400}
+            height={400}
+            className="md:w-1/4 w-full opacity-100 transition-all duration-500 hover:opacity-70"
+          />
+          <Image
+            src={FootImg4}
+            alt="avatar"
+            width={400}
+            height={400}
+            className="md:w-1/4 w-full opacity-100 transition-all duration-500 hover:opacity-70"
+          />
+        </div>
+        <div className="hover:bg-red-700 hover:text-white text-red-700 transition-all duration-500 absolute bg-white  p-3 rounded-full flex justify-center items-center top-[42%] right-[42%] size-20">
+          <FaInstagram className=" size-12 " />
+        </div>
+      </div>
+      <div className="bg-[#0B0D26] text-white pt-20 px-5">
         <div className="md:grid md:grid-cols-2 md:gap-x-7 lg:gap-x-20 lg:w-3/4 lg:mx-auto">
           <div className="">
             <h2 className="text-6xl font-serif">Spice</h2>
